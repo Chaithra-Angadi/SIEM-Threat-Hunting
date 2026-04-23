@@ -1,0 +1,32 @@
+# Threat Hunting Report - AWS CloudTrail Analysis
+
+## Objective
+To identify suspicious IAM activities using CloudWatch Logs Insights.
+
+## Queries Performed
+- Recent activity monitoring
+- IAM privilege escalation detection
+- Root user activity tracking
+- IP-based activity analysis
+
+## Findings
+- Detected CreateUser and AttachUserPolicy events
+- Observed root user activity performing administrative actions
+- Identified source IP addresses associated with these events
+
+## Security Risks
+- Privilege escalation through admin policy attachment
+- Root account usage increases attack surface
+- Repeated actions from same IP could indicate suspicious activity
+
+## Recommendations
+- Monitor IAM changes continuously
+- Restrict root usage
+- Enable MFA for all users
+- Set alerts for unusual IP activity
+
+## Skills Demonstrated
+- Log analysis (CloudWatch Logs Insights)
+- Threat hunting
+- Security investigation
+- Cloud security monitoring
